@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ตารางโพสต์รายเดือน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>จัดการตารางโพสต์</h1>
+  <nav>
+    <a href="index.html">ฝากงาน</a>
+    <a href="schedule.html">ตารางโพสต์</a>
+  </nav>
+</header>
+
+<section class="container">
+
+  <h2>เพิ่มคอนเทนต์ลงตาราง</h2>
+
+  <form id="scheduleForm">
+
+    <label>เลือกวันที่</label>
+    <input type="date" id="postDate" required>
+
+    <label>ชนิดของคอนเทนต์</label>
+    <select id="contentType" required>
+      <option disabled selected>เลือกคอนเทนต์</option>
+      <option>R - ฟิลเลอร์ทั่วหน้า</option>
+      <option>PR - ฟิลเลอร์ทั่วหน้า</option>
+      <option>(VDO)R - ฟิลเลอร์ทั่วหน้า</option>
+      <option>(VDO)PR - ฟิลเลอร์ทั่วหน้า</option>
+      <option>R - ฟิลเลอร์ 3 จุด</option>
+      <option>PR - ฟิลเลอร์ 3 จุด</option>
+      <option>(VDO)R - ฟิลเลอร์ 3 จุด</option>
+      <option>(VDO)PR - ฟิลเลอร์ 3 จุด</option>
+      <option>R - ฟิลเลอร์ 1 จุด</option>
+      <option>PR - ฟิลเลอร์ 1 จุด</option>
+      <option>(VDO)R - ฟิลเลอร์ 1 จุด</option>
+      <option>(VDO)PR - ฟิลเลอร์ 1 จุด</option>
+      <option>R - แฟต</option>
+      <option>PR - แฟต</option>
+      <option>R - Pico</option>
+      <option>PR - Pico</option>
+      <option>R - Oligio</option>
+      <option>PR - Oligio</option>
+      <option>(VDO)R - Oligio</option>
+      <option>(VDO)PR - Oligio</option>
+      <option>R - Ulthera</option>
+      <option>PR - Ulthera</option>
+      <option>(VDO)R - Ulthera</option>
+      <option>(VDO)PR - Ulthera</option>
+      <option>R - Scanxel</option>
+      <option>PR - Scanxel</option>
+      <option>(VDO)R - Scanxel</option>
+      <option>(VDO)PR - Scanxel</option>
+      <option>R - โบท็อกซ์</option>
+      <option>PR - โบท็อกซ์</option>
+      <option>(VDO)R - โบท็อกซ์</option>
+      <option>(VDO)PR - โบท็อกซ์</option>
+      <option>R - จมูก</option>
+      <option>PR - จมูก</option>
+      <option>(VDO)R - จมูก</option>
+      <option>(VDO)PR - จมูก</option>
+      <option>R - ดึงหน้า</option>
+      <option>PR - ดึงหน้า</option>
+      <option>(VDO)R - ดึงหน้า</option>
+      <option>(VDO)PR - ดึงหน้า</option>
+      <option>R - ตาสองชั้น</option>
+      <option>PR - ตาสองชั้น</option>
+      <option>(VDO)R - ตาสองชั้น</option>
+      <option>(VDO)PR - ตาสองชั้น</option>
+      <option>R - Subbrow</option>
+      <option>PR - Subbrow</option>
+      <option>(VDO)R - Subbrow</option>
+      <option>(VDO)PR - Subbrow</option>
+    </select>
+
+    <button type="submit">เพิ่มลงตาราง</button>
+  </form>
+
+  <h2>ตารางโพสต์</h2>
+  <table id="calendarTable">
+    <thead>
+      <tr>
+        <th>วันที่</th>
+        <th>คอนเทนต์</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
