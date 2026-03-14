@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ฝากงานกราฟิก / ตัดต่อ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>ฝากงานกราฟิก • ตัดต่อ</h1>
+  <nav>
+    <a href="index.html">ฝากงาน</a>
+    <a href="schedule.html">ตารางโพสต์</a>
+  </nav>
+</header>
+
+<section class="container">
+
+  <h2>ฟอร์มฝากงาน</h2>
+
+  <form id="workForm">
+    <label>ชื่องาน</label>
+    <input type="text" id="workName" required>
+
+    <label>ลิงก์ Google Docs / Google Drive</label>
+    <input type="url" id="workLink" required>
+
+    <label>ประเภทงาน</label>
+    <select id="workType">
+      <option value="graphic">กราฟิก</option>
+      <option value="video">ตัดต่อวิดีโอ</option>
+    </select>
+
+    <button type="submit">บันทึกงาน</button>
+  </form>
+
+  <h2>รายการงานที่ฝากแล้ว</h2>
+  <table id="workTable">
+    <thead>
+      <tr>
+        <th>ชื่องาน</th>
+        <th>ลิงก์</th>
+        <th>ประเภท</th>
+        <th>สถานะ</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
