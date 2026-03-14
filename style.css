@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fafafa;
+}
+
+header {
+  background: white;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #444;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+form label {
+  margin-top: 10px;
+  display: block;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
